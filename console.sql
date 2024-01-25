@@ -1,4 +1,4 @@
-create table Person(
+CREATE TABLE Person(
     id int auto_increment primary key,
     age int,
     salary double,
