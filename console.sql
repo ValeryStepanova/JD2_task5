@@ -5,7 +5,7 @@ CREATE TABLE Person(
     passport varchar(10),
     address varchar(200),
     dateOfBirthday date,
-    dateTimeCreate datetime,
+    dateTimeCreate  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     timeToLunch time,
     letter text
 );
@@ -21,4 +21,4 @@ insert into person(age, salary, passport, address, dateOfBirthday, dateTimeCreat
 VALUES (21, 323, 'MC342', 'Jfdf','2001-01-14', '2024-01-23 15:23', '02:00:00', 'llll' );
 
 select* from person where age>21
-order by dateTimeCreate asc;
+order by dateTimeCreate;
